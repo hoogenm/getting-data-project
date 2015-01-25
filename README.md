@@ -80,6 +80,7 @@ expanded in *time* and *freq*.
   *subject* and *activity* are kept as *'id'*-columns; the type-of-feature is melted into the id-column *feature*.
 * ```ddply()``` is now used to calculate the mean of the values for each combination of subject, activity, feature
   (the result is still in long format).
+* The values now contain averages (means): the script now prepends ```avg.``` to all measurement labels, to reflect the new meaning of the measurements.
 * ```dcast()``` is then used to place each feature (measurement) in it's own column. Every observation (i.e. all
 measurements for the same "group" of subject/activity) will be in it's own row.
 
