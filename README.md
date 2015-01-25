@@ -6,12 +6,12 @@ The script ```run_analysis.R``` in this repository fulfills the requirements of 
 "Getting and Cleaning Data". This ```readme.md``` will explain the tools used, "how to use" the script,
 and the way the script handles it's job.
 
-In writing the script, in addition to reading the course assignment and the files supplied in the dataset, I also used
-the official 'Discussion Forum' for the assignment.
+In writing the script, in addition to reading the course assignment and the files supplied in the dataset, I also used the official 'Discussion Forum' for the assignment.
 
 *The script will create ```result_of_step5.csv``` from the dataset.*
 
-The Codebook for the variables is supplied in a separate file.
+## Codebook
+The Codebook for the variables is supplied in a separate file called ```codebook.pdf``` and can be found alongside this README.md in the toplevel directory of this repository.
 
 ## Used versions of R and packages
 * This script was developed and tested using R version 3.1.2 on a 64-bit Linux system (used distribution: Netrunner 14,
