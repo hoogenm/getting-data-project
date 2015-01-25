@@ -8,7 +8,7 @@ library(plyr)      # plyr and dplyr for function call chaining with ...
 library(dplyr)     # ... %>% and for revalue() to recode activities by labels
 library(reshape2)  # to melt the dataset for step 5
 
-# setwd('~/data-science/getting-project')  # Set output folder: customize if/as needed
+setwd('~/data-science/getting-project')  # Set output folder: customize if/as needed
 url <- paste0("https://d396qusza40orc.cloudfront.net/",
               "getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip")
 
@@ -84,6 +84,9 @@ melted.dataset <- melt(merged.dataset, .(subject, activity),
 means.for.dataset <- ddply(melted.dataset,
                            c("subject", "activity", "feature"),
                            summarize, average=mean(value))
+
+# Prepend 'avg' to all feature names to indicate that they now are averages
+means.for.dataset$feature <- paste('avg', sep='.', means.for.dataset$feature)
 
 # Cast into a tidy, wide format; each measurement (feature) in it's own column
 tidy.means <- dcast(means.for.dataset, subject + activity ~ feature,
