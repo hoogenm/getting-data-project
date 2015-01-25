@@ -11,7 +11,9 @@ In writing the script, in addition to reading the course assignment and the file
 *The script will create ```result_of_step5.csv``` from the dataset.*
 
 ## Codebook
-The Codebook for the variables is supplied in a separate file called ```codebook.pdf``` and can be found alongside this README.md in the toplevel directory of this repository.
+The Codebook for the variables is supplied in ```CodeBook.md``` and can be found alongside this README.md in the toplevel directory of this repository.
+
+There is also a ```codebook.pdf``` that also lists the variables and might be easier for printing/reference. This was not required but added additionally.
 
 ## Used versions of R and packages
 * This script was developed and tested using R version 3.1.2 on a 64-bit Linux system (used distribution: Netrunner 14,
