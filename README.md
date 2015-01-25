@@ -29,9 +29,9 @@ in the script.
 * Observe the result in ```result_of_step5.csv```.
 
 Notes:
-* The script will download the dataset (unless a cached copy is stored with the name ```HORUS.zip```), so the ẁorking
+* The script will download the dataset (unless a cached copy is stored with the name ```HARUS.zip```), so the ẁorking
 directory should be writable from R and have sufficient space.
-* Unless a cached copy of the dataset is present, the script will download the dataset as ```HORUS.zip``` and unzip it.
+* Unless a cached copy of the dataset is present, the script will download the dataset as ```HARUS.zip``` and unzip it.
 * *If* a cached copy is already present, the script will presume the dataset has also been unzipped.
 * If you run the script, the result will be the file ```result_of_step5.csv```. Please allow sufficient processing time
 depending on the processing equipment (computer, storage) used.
