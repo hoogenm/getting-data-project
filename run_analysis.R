@@ -88,3 +88,5 @@ means.for.dataset <- ddply(melted.dataset,
 # Cast into a tidy, wide format; each measurement (feature) in it's own column
 tidy.means <- dcast(means.for.dataset, subject + activity ~ feature,
                     value.var="average")
+
+write.table(tidy.means, file="result_of_step5.csv", row.names=FALSE)
